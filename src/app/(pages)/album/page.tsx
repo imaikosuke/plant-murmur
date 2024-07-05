@@ -29,7 +29,7 @@ export default function AlbumPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <div className="min-h-screen bg-gray-100 p-4 pt-20">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-center mb-8">植物の記録</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
