@@ -46,7 +46,7 @@ export default function ConditionPage() {
     labels: data.map((item) => dayjs(item.timestamp).format("YYYY-MM-DD HH:mm")),
     datasets: [
       {
-        label: "Soil Moisture",
+        label: "土壌水分（％）",
         data: data.map((item) => item.moisture),
         borderColor: "rgba(75, 192, 192, 1)",
         backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -62,7 +62,7 @@ export default function ConditionPage() {
         <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-gray-700">Start Date:</label>
+              <label className="block text-gray-700">開始日</label>
               <input
                 type="date"
                 value={startDate}
@@ -71,7 +71,7 @@ export default function ConditionPage() {
               />
             </div>
             <div>
-              <label className="block text-gray-700">End Date:</label>
+              <label className="block text-gray-700">終了日</label>
               <input
                 type="date"
                 value={endDate}
@@ -86,7 +86,7 @@ export default function ConditionPage() {
             }}
             className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg shadow-lg"
           >
-            Fetch Data
+            データの更新
           </button>
           {error && <p className="mt-4 text-red-500">{error}</p>}
         </div>
