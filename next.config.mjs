@@ -1,12 +1,13 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'via.placeholder.com',
+        hostname: 'plantmurmurstorage.blob.core.windows.net',
         port: '',
-        pathname: '/**',
+        pathname: '/photos/**',
       },
     ],
   },
